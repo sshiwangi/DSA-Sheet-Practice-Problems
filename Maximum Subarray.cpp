@@ -24,7 +24,7 @@ Constraints:
 1 <= nums.length <= 105
 -104 <= nums[i] <= 104 */
 
-//code
+//Kadane Algorithm approach: if overall sum become negative then it is better to reinitialize sum to zero , beacuse there might be a possibility that later we will get positive sum , but if we move with negative sum then it only decrease our positive sum , so it better to reinitialize sum to 0 means start new subarray from next index ,
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
